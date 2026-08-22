@@ -13,8 +13,8 @@ import {
 import { RiRobot2Line } from 'react-icons/ri';
 import './App.css';
 
-const API = 'http://localhost:8000/api';
-const WS  = 'ws://localhost:8000/ws';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:8000/api';
+const WS  = import.meta.env.VITE_WS_URL || 'ws://localhost:8000/ws';
 
 const AGENTS = ['order_validator','inventory_checker','invoice_generator','payment_risk'];
 const AGENT_INFO = {
