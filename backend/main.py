@@ -28,8 +28,8 @@ app = FastAPI(title="Multi-Agent Order-to-Cash Orchestrator", version="2.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.ALLOWED_ORIGINS,
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
