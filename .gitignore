@@ -1,0 +1,57 @@
+# ─── Python ────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Environment & Secrets ─────────────────
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ─── Node / Frontend ────────────────────────
+node_modules/
+dist/
+.cache/
+*.local
+
+# ─── Logs ───────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+
+# ─── Database ───────────────────────────────
+*.db
+*.sqlite
+
+# ─── IDE ────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Docker ─────────────────────────────────
+.dockerignore
+
+# ─── Test & Coverage ────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
